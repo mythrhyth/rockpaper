@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK PAPER SCISSORS</title>
+    <link href = "rockpaper.css" rel = "stylesheet">
+</head>
+<body>
+    <div class = "box"><p class = "title">Rock Paper Scissors</p>
+
+    </div>
+    <div class = "buttons">
+        <button  onclick = "choice = 'rock'
+     randomNumber = Math.random();
+     compare(choice, randomNumber);" class = "move-button">
+    
+    <img src = "rock-emoji.png" class = "move-icon">
+    
+    </button>
+    <button  onclick = "choice = 'scissors'
+      randomNumber = Math.random();
+      compare(choice, randomNumber);
+    " class = "move-button">
+    <img src = "scissors-emoji.png" class = "move-icon">
+
+
+
+
+</button>
+    <button  onclick = "choice = 'paper'
+     randomNumber = Math.random();
+     compare(choice, randomNumber);" class = "move-button">
+    
+     <img src = "paper-emoji.png" class = "move-icon">
+    </button>
+    
+    
+     <p id = "write"></p>
+     <p id = "list"></p>
+     <button onclick="ties = 0; loss = 0; wins = 0;
+     mydiv.innerHTML='Wins: '+wins+ ' Loss: '+ loss +' Ties: '+ties;
+     
+     ">Reset Score</button>
+    
+    <script src = "rockpaper.js"></script>
+</body>
+</html>
